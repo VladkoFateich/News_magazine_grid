@@ -33,13 +33,6 @@
     background-color: rgb(248, 200, 200);
     grid-column: 1 / -1;
 }
-/* .article:nth-child(3) { */
-    /* grid-column: span 2; */
-    /* grid-column: 1 / span 2 */
-    /* grid-column: 1/-2 */
-    /* grid-column: 1/1 */
-    /* grid-column: 1/-1 */
-  /* } */
 p{
     margin: 0 10px 5px 0;
     float: left
@@ -49,7 +42,6 @@ hr {
     height: 6px;
 	border-radius: 6px;
     background: linear-gradient(45deg, #333, #ddd)
-    
 }
 .img {
     border: 1px solid rgb(0, 0, 0);
