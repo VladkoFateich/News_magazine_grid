@@ -30,18 +30,25 @@
 //   }
 // }
 
+let images = document.querySelectorAll(".articleImg"),
+  articleTitles = document.querySelectorAll(".articleTitle"),
+  articleTxt = document.querySelectorAll(".articleTxt"),
+  arrNumArticle = [1, 8, 12, 13, 14, 29, 34, 35, 47, 56, 59, 62, 68, 72, 77];
+imgLink =
+  "https://wp-s.ru/wallpapers/9/19/508322161627456/foto-zelenoj-doliny-na-fone-golubogo-neba.jpg";
 
-let images = document.querySelectorAll('.articleImg'),
-articleTitles = document.querySelectorAll('.articleTitle'),
-articleTxts = document.querySelectorAll('.articleTxt'),
-imgLink = 'https://wp-s.ru/wallpapers/9/19/508322161627456/foto-zelenoj-doliny-na-fone-golubogo-neba.jpg'
-
-for(let image of images) {
-    image.src = imgLink
+for (let image of images) {
+  image.src = imgLink;
 }
-for(let articleTitle of articleTitles) {
-    articleTitle.textContent = 'Title'
+for (let articleTitle of articleTitles) {
+  articleTitle.textContent = "Title";
 }
-for(let articleTxt of articleTxts) {
-    articleTxt.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+for (let i = 0; i <= articleTxt.length; i++) {
+  articleTxt[i].innerHTML = `<B>${i + 1}</B>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`;
+  for (let num of arrNumArticle) {
+    if ([i] == num) {
+      articleTxt[i].innerHTML =
+        `<B>${i + 1}</B>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`;
+    }
+  }
 }
