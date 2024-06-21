@@ -31,8 +31,9 @@
 // }
 
 
-let images = document.querySelectorAll('.image'),
+let images = document.querySelectorAll('.articleImg'),
 articleTitles = document.querySelectorAll('.articleTitle'),
+articleTxts = document.querySelectorAll('.articleTxt'),
 imgLink = 'https://wp-s.ru/wallpapers/9/19/508322161627456/foto-zelenoj-doliny-na-fone-golubogo-neba.jpg'
 
 for(let image of images) {
@@ -41,4 +42,6 @@ for(let image of images) {
 for(let articleTitle of articleTitles) {
     articleTitle.textContent = 'Title'
 }
-
+for(let articleTxt of articleTxts) {
+    articleTxt.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+}

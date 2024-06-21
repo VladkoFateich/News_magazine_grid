@@ -20,13 +20,14 @@
     grid-auto-flow: dense;
 }
 .newsBlock {
-    border: px solid rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    padding: 20px;
 }
-.image {
+.articleImg {
 width: 100%;
 object-fit: contain;
+}
+.articleContent {
+    padding: 20px;
 }
 /* .article:nth-child(8n + 3) {
     background-color: rgb(167, 195, 134);
@@ -53,8 +54,9 @@ hr {
 	border-radius: 6px;
     background: linear-gradient(45deg, #333, #ddd)
 }
-.img {
+/* .img {
     border: 1px solid rgb(0, 0, 0);
     height: 100px;
     margin-bottom: 20px;
-}
+} */
+
